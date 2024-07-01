@@ -30,9 +30,7 @@
 import SwiftUI
 
 enum StaticSlidingRulerStyleEnvironment {
-    @Environment(\.slidingRulerStyle.cellWidth) static var cellWidth
-    @Environment(\.slidingRulerStyle.cursorAlignment) static var alignment
-    @Environment(\.slidingRulerStyle.hasMarks) static var hasMarks
+    static var hasMarks = false
 }
 
 struct SlidingRulerStyleEnvironmentKey: EnvironmentKey {
